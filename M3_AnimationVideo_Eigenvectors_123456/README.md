@@ -5,6 +5,14 @@
 **Student ID:** e25b071369  
 **Course:** Linear Algebra (First-Year University Project)  
 
+---
+
+## 🎬 Watch the Video Online
+▶️ **[Direct Stream / Download (1080p with Voice-Over)](https://github.com/Aaryancodesss/animation-video-M3/releases/download/v1.0.0/Eigenvalues_and_Eigenvectors_Animation_1080p.mp4)**  
+🌟 **[View GitHub Release Page (v1.0.0)](https://github.com/Aaryancodesss/animation-video-M3/releases/tag/v1.0.0)**
+
+---
+
 A complete, university-level mathematical animation project explaining **Eigenvalues and Eigenvectors** of a $2 \times 2$ matrix, designed for a fellow first-year undergraduate student.
 
 ---

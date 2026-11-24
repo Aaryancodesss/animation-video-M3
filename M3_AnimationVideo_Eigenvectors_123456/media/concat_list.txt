@@ -1,0 +1,8 @@
+file '/Users/aaryan6969/Desktop/animation-video-M3/M3_AnimationVideo_Eigenvectors_123456/media/videos/1080p30/TitleScene.mp4'
+file '/Users/aaryan6969/Desktop/animation-video-M3/M3_AnimationVideo_Eigenvectors_123456/media/videos/1080p30/HookScene.mp4'
+file '/Users/aaryan6969/Desktop/animation-video-M3/M3_AnimationVideo_Eigenvectors_123456/media/videos/1080p30/ConceptIntroScene.mp4'
+file '/Users/aaryan6969/Desktop/animation-video-M3/M3_AnimationVideo_Eigenvectors_123456/media/videos/1080p30/VisualIntuitionScene.mp4'
+file '/Users/aaryan6969/Desktop/animation-video-M3/M3_AnimationVideo_Eigenvectors_123456/media/videos/1080p30/WorkedExampleScene.mp4'
+file '/Users/aaryan6969/Desktop/animation-video-M3/M3_AnimationVideo_Eigenvectors_123456/media/videos/1080p30/InterpretationScene.mp4'
+file '/Users/aaryan6969/Desktop/animation-video-M3/M3_AnimationVideo_Eigenvectors_123456/media/videos/1080p30/SummaryScene.mp4'
+file '/Users/aaryan6969/Desktop/animation-video-M3/M3_AnimationVideo_Eigenvectors_123456/media/videos/1080p30/ClosingScene.mp4'

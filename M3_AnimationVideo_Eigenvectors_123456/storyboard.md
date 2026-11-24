@@ -1,0 +1,35 @@
+# Storyboard: Eigenvalues and Eigenvectors
+
+**Project:** University Animation Project — Linear Algebra  
+**Student Name:** Aaryan Sharma  
+**Batch:** Turing  
+**Student ID:** e25b071369  
+**Learning Objective:** *"By the end of this video, the viewer will be able to explain eigenvectors as directions a matrix only stretches, and find them for a 2x2 matrix."*  
+**Target Audience:** First-year undergraduate STEM students.  
+**Example Matrix:**  
+$$A = \begin{bmatrix} 2 & 1 \\ 1 & 2 \end{bmatrix}, \quad \lambda_1 = 3, \mathbf{v}_1 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}, \quad \lambda_2 = 1, \mathbf{v}_2 = \begin{bmatrix} 1 \\ -1 \end{bmatrix}$$
+
+---
+
+## Visual Design & Color Standards
+- **Background:** Deep clean dark theme (`#0e1117`) for high contrast and minimal eye fatigue.
+- **$\mathbf{\hat{i}}$ Basis Vector:** Green (`#83C167`)
+- **$\mathbf{\hat{j}}$ Basis Vector:** Red (`#FC6255`)
+- **Eigenvector 1 ($\lambda_1 = 3$):** Yellow (`#FFFF00`) along the line $y = x$
+- **Eigenvector 2 ($\lambda_2 = 1$):** Vibrant Blue (`#3399FF`) along the line $y = -x$
+- **Generic/Random Vectors:** Orange (`#FFA500`)
+
+---
+
+## 6-Scene Detailed Storyboard Table
+
+| Scene # & Name | Pedagogical Purpose | Visual Layout & Animations | Narration Plan (Spoken Language) | Mathematical & Algebraic Plan |
+| :--- | :--- | :--- | :--- | :--- |
+| **Scene 0: Title Frame**<br>`TitleScene` | Establish professional context, introduce the topic, course, and student credentials. | - Clean centered typography with divider.<br>- Fade in Title and Subtitle.<br>- Display Student Name (`Aaryan Sharma`), Batch (`Turing`), and Student ID (`e25b071369`). | Welcome everyone. I am Aaryan Sharma from Batch Turing. Today we are exploring one of the most foundational and visually intuitive concepts in linear algebra: eigenvalues and eigenvectors. | $A \mathbf{v} = \lambda \mathbf{v}$ overview. |
+| **Scene 1: The Hook**<br>`HookScene` | Challenge the viewer's geometric intuition; motivate why eigenvectors are special. | - Number plane with basis vectors $\mathbf{\hat{i}}$ (green) and $\mathbf{\hat{j}}$ (red) and vector $\mathbf{w}$ (orange).<br>- Matrix badge $A = \begin{bmatrix}2 & 1 \\ 1 & 2\end{bmatrix}$ in corner.<br>- Smooth transformation of vectors into $A\mathbf{\hat{i}}$, $A\mathbf{\hat{j}}$, and $A\mathbf{w}$. | When a matrix transforms space, it stretches and rotates almost every vector away from its original span line. Look at $\mathbf{\hat{i}}$ and $\mathbf{\hat{j}}$—they both tilt and swing. But are there any special directions that don't get rotated at all? | $A \mathbf{\hat{i}} = \begin{bmatrix}2\\1\end{bmatrix}$,<br>$A \mathbf{\hat{j}} = \begin{bmatrix}1\\2\end{bmatrix}$,<br>$A \mathbf{w} = \begin{bmatrix}3.5\\4\end{bmatrix}$. |
+| **Scene 2: Concept Introduction**<br>`ConceptIntroScene` | Formulate the mathematical definition and state the clear learning objective. | - Prominently boxed equation $A\mathbf{v} = \lambda\mathbf{v}$.<br>- Sequential bullet points defining $A$ (matrix operator), $\mathbf{v}$ (non-zero eigenvector direction), and $\lambda$ (scalar eigenvalue).<br>- Framed Learning Objective card. | Here is the famous equation: $A\mathbf{v} = \lambda\mathbf{v}$. An eigenvector $\mathbf{v}$ is a non-zero vector whose direction remains unchanged by $A$. The matrix simply scales it by a scalar factor $\lambda$, called the eigenvalue. | Define: $A \in \mathbb{R}^{2 \times 2}$, $\mathbf{v} \neq \mathbf{0}$, $\lambda \in \mathbb{R}$.<br>Contrast $A\mathbf{v} \parallel \mathbf{v}$ with general $A\mathbf{u} \nparallel \mathbf{u}$. |
+| **Scene 3: Visual Intuition**<br>`VisualIntuitionScene` | Visually demonstrate preserved span lines versus rotated vectors. | - Dashed invariant span lines: Yellow line ($y = x$) and Blue line ($y = -x$).<br>- Eigenvector $\mathbf{v}_1 = [1, 1]^T$ on yellow line, $\mathbf{v}_2 = [1, -1]^T$ on blue line, plus random vector $\mathbf{u}$.<br>- Transformation animates: $\mathbf{u}$ rotates off; $\mathbf{v}_1$ stretches $3\times$; $\mathbf{v}_2$ is unchanged ($1\times$). | Watch the coordinate grid deform under $A$. Notice the random vector $\mathbf{u}$ swings wildly. But look at our two special lines: the yellow vector along $y = x$ stretches by a factor of 3, while the blue vector along $y = -x$ stays exactly the same length! | $\mathbf{v}_1 \mapsto 3\mathbf{v}_1$,<br>$\mathbf{v}_2 \mapsto 1\mathbf{v}_2$,<br>$\text{span}(\mathbf{v}_1)$ and $\text{span}(\mathbf{v}_2)$ invariant. |
+| **Scene 4: Worked Example**<br>`WorkedExampleScene` | Step-by-step algebraic derivation of eigenvalues, eigenvectors, and numerical check. | - **Step 1:** Setup $\det(A - \lambda I) = 0$, expand $(2-\lambda)^2 - 1 = 0 \Rightarrow \lambda^2 - 4\lambda + 3 = 0 \Rightarrow (\lambda-3)(\lambda-1)=0$.<br>- **Step 2:** Two side-by-side columns solving $(A - 3I)\mathbf{v}=\mathbf{0}$ ($\Rightarrow y=x$) and $(A - I)\mathbf{v}=\mathbf{0}$ ($\Rightarrow y=-x$).<br>- **Step 3:** Green numerical check box verifying $A\mathbf{v} = \lambda\mathbf{v}$. | How do we find these numbers algebraically? We solve $\det(A - \lambda I) = 0$. Expanding the determinant gives $\lambda^2 - 4\lambda + 3 = 0$, yielding $\lambda = 3$ and $\lambda = 1$. Substituting back gives $\mathbf{v}_1 = [1, 1]^T$ and $\mathbf{v}_2 = [1, -1]^T$. | $\det\begin{bmatrix}2-\lambda & 1 \\ 1 & 2-\lambda\end{bmatrix} = 0$,<br>$\lambda_1 = 3 \Rightarrow \mathbf{v}_1 = [1, 1]^T$,<br>$\lambda_2 = 1 \Rightarrow \mathbf{v}_2 = [1, -1]^T$,<br>$A\mathbf{v}_1 = [3, 3]^T$, $A\mathbf{v}_2 = [1, -1]^T$. |
+| **Scene 5: Geometric Interpretation**<br>`InterpretationScene` | Connect matrix algebra, eigenbasis, and determinant area scaling. | - Number plane with unit square spanned by $\mathbf{\hat{i}}$ and $\mathbf{\hat{j}}$ (area = 1).<br>- Parallelogram formed by $A\mathbf{\hat{i}}$ and $A\mathbf{\hat{j}}$ (area = 3).<br>- Highlight $\det(A) = 3 = \lambda_1 \times \lambda_2$.<br>- Show eigenvectors decoupling 2D distortion into independent 1D scalings. | The determinant of $A$ is $2(2) - 1(1) = 3$. Geometrically, this means any area in the plane is multiplied by 3! Notice that $\lambda_1 \times \lambda_2 = 3 \times 1 = 3$. The product of eigenvalues always equals the determinant. | $\det(A) = ad - bc = 3$,<br>$\det(A) = \prod \lambda_i = 3 \times 1 = 3$,<br>Area scaling factor $= |\det(A)| = 3$. |
+| **Scene 6: Summary & Credits**<br>`SummaryScene` | Synthesize key takeaways, cite references, and provide AI tool disclosure. | - 3 Core Takeaway bullet points animate in.<br>- Reference box (3Blue1Brown, Gilbert Strang, audio credit placeholder).<br>- Prominent AI disclosure badge at bottom. | To wrap up: eigenvectors are lines of pure stretch, eigenvalues are the stretch multipliers, and their product gives the determinant. Linear transformations become simple when viewed along their eigen-directions. | Summary of $A\mathbf{v}=\lambda\mathbf{v}$, characteristic polynomial, and eigenbasis. |
+| **Closing Frame**<br>`ClosingScene` | Polite wrap-up. | Centered "Thank You for Watching!" with course subtitle. | Thank you for watching, and happy studying! | Clean finish. |

@@ -1,0 +1,18 @@
+# Virtual environment
+venv/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# macOS
+.DS_Store
+
+# Temporary partial rendering files
+media/voiceover_temp/
+media/videos/**/partial_movie_files/
+media/Tex/
+media/texts/
